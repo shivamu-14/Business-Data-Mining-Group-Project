@@ -60,7 +60,7 @@ for _, row in df.iterrows():
     folium.PolyLine(locations=[restaurant_node, delivery_node], color=cluster_color, weight=2.5, opacity=0.7).add_to(m)
 
 #combined map with spatial and network analysis
-webbrowser.open("combined_spatial_network_map.html")
+m.save("combined_spatial_network_map.html")
 print("Combined spatial and network analysis map saved as 'combined_spatial_network_map.html'.")
 
 # Converting locations to geometry points
